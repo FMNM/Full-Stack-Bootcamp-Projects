@@ -24,7 +24,18 @@ main {
 }
 
 h1 {
+  font-weight: bold;
   font-size: 24px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .divider {
@@ -33,9 +44,9 @@ h1 {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  bottom: 0%;
   background-color: #333;
   color: #fff;
   padding: 10px;
@@ -43,14 +54,44 @@ footer {
 }
 
 .navList {
-  width: auto;
   list-style: none;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .navItem,
 a {
-  color: white;
+  background-color: lightgray;
+  padding: 5px 10px;
+  width: 33%;
+  color: #333;
   margin: auto;
+}
+
+.flexBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flexItem {
+  width: calc(25% - 10px);
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .flexItem {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 500px) {
+  .flexItem {
+    width: 100%;
+  }
 }

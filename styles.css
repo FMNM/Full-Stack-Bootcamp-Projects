@@ -12,11 +12,7 @@ header {
   display: flex;
 }
 
-.heading {
-  color: green;
-}
-
-.headingInfo {
+.headerInfo {
   width: 75%;
   margin: auto;
 }
@@ -29,6 +25,11 @@ main {
 
 h1 {
   font-size: 24px;
+}
+
+.divider {
+  border-bottom: 1px solid #333;
+  margin: 20px 0;
 }
 
 footer {
